@@ -1,0 +1,270 @@
+Python:
+
+1. What is Python , Explain features of Python.
+  Python is a high-level programming language known for its simplicity and readability. It supports multiple programming paradigms including object-oriented, imperative, and functional programming.
+  Features include dynamic typing, automatic memory management, a large standard library, and support for multiple platforms.
+
+2. How Python is interpreted.
+  Python code is executed line by line by the Python interpreter. The interpreter reads the code, converts it into bytecode, and then executes the bytecode.
+
+3. Explain dict.
+  A dict in Python is a collection of key-value pairs where each key is unique. It is mutable and unordered.
+  
+4. How to pass optional or keyword arguments.
+  Optional arguments can be passed to a function by specifying default values for parameters. Keyword arguments are passed with a key-value syntax, allowing them to be passed in any order.
+
+5. Explain indexing and slicing.
+  Indexing is accessing individual elements of a sequence (like a list or string) using their position. Slicing is extracting a portion of a sequence using a start and stop index.
+
+6. What is lambda.
+  Lambda functions are small, anonymous functions defined using the lambda keyword. They can take any number of arguments but can only have one expression.
+
+7. Difference between str() and repr().
+  str() returns a human-readable representation of an object, while repr() returns a string representation that could be used to recreate the object.
+
+8. Explain serialization and deserialization / Pickling and unpicking.
+  Serialization is the process of converting a data structure or object into a format that can be stored or transmitted. Deserialization is the reverse process.
+
+9. What is list / dict compression.
+  List/dict comprehension is a concise way to create lists/dicts in Python by iterating over an iterable and applying an expression.
+
+10. What are higher ordered functions.
+  Functions that take other functions as arguments or return functions as results are called higher-order functions.
+
+11. How to copy object in Python. Diff between shallow copy and deep copy.
+  copy() function is used for shallow copy, while deepcopy() function is used for deep copy in Python.
+
+12. How to make array in python.
+  Arrays in Python are implemented using the array module or by using lists.
+
+13. How to generate random numbers.
+  Random numbers can be generated using the random module in Python.
+
+14. How to handle exceptions.
+  Exceptions are handled using try-except blocks in Python.
+
+15. When to use list/tuple/set.
+  Lists are mutable sequences, tuples are immutable sequences, and sets are unordered collections of unique elements.
+
+16. Disadvantageous of python.
+  Slower execution speed compared to languages like C or C++, and global interpreter lock (GIL) limiting multi-threading performance.
+
+17. Diff range() and xrannge()
+  range() returns a list, while xrange() returns an xrange object which evaluates lazily.
+
+18. What is PEP8
+  PEP8 is the style guide for Python code. It provides guidelines on how to format code for readability.
+
+19. What is virtualenv
+  Virtualenv is a tool used to create isolated Python environments.
+
+20. Diff between Python 2.* and 3.*
+  Python 3 introduced many backwards-incompatible changes compared to Python 2, including print function, integer division, Unicode support by default, and more.
+
+21. What is decorator, usage ?
+  Decorators are functions that modify the behavior of other functions. They are used to add functionality to existing functions.
+
+22. With statement and its usage.
+  The with statement is used in Python to ensure that clean-up code is executed, regardless of whether an exception is raised.
+
+23. What is class and what is self.
+  A class is a blueprint for creating objects in Python. self refers to the instance of the class and is used to access variables and methods within the class.
+
+24. Explain isinstance()
+  isinstance() is used to check if an object is an instance of a particular class.
+
+25. What is static method, class method and instance method
+  Static methods are bound to the class rather than an instance, class methods are bound to the class, and instance methods are bound to the instance of the class.
+
+26. Treading in python
+  Threading in Python allows multiple threads of execution to run concurrently.
+
+27. What are iterators and generators
+  Iterators are objects that implement the iterator protocol, while generators are a convenient way to create iterators.
+
+28. Explain map, filter,reduce and lambda.
+  Map, filter, and reduce are built-in functions in Python for functional programming tasks. Lambda functions are often used with these functions for brevity.
+
+29. Difference between new styled classed and old styled classes.
+  New-style classes inherit from object, while old-style classes don't.
+
+30. What is diff between Python and Java
+  Python is dynamically typed and has simpler syntax, while Java is statically typed and has a more verbose syntax.
+
+31. What is context processor.
+  Context processors allow you to make data available to all templates.
+
+32. What is exec() and eval ()
+  exec() executes Python code dynamically, while eval() evaluates an expression dynamically.
+
+33. How to pass command line argument.
+  Command-line arguments can be accessed using the sys.argv list or using the argparse module.
+
+34. What is yield ?
+  Yield is used in Python to create generators, which produce a sequence of values lazily.
+
+35. What is ord() and chr()
+  ord() returns the Unicode code point for a given character, while chr() returns the character for a given Unicode code point.
+
+36. What are Metaclasses.
+  Metaclasses are the class of a class. They allow you to customize class creation in Python.
+
+37. What is descriptor ?
+  Descriptors are objects that define how attribute access is handled.
+
+38. Any 10 python packages you have used.
+  Some commonly used Python packages include numpy, pandas, matplotlib, requests, scikit-learn, TensorFlow, Flask, Django, etc.
+
+39. What is namespace in Python? namespace vs scope ?
+  A namespace is a mapping of names to objects, while scope determines the visibility of a name within a block of code.
+
+40. What is MRO ?
+  Method Resolution Order (MRO) determines the order in which methods are resolved in Python's multiple inheritance.
+
+41. == vs is ?
+  == compares the values of two objects, while is checks if two objects refer to the same memory location.
+
+42. mutable vs immutable
+  Mutable objects can be changed after creation (e.g., lists, dictionaries), while immutable objects cannot be changed (e.g., strings, tuples).
+
+
+Django:
+
+1. What is Django?
+   Django is a high-level Python web framework that simplifies web development by providing built-in features for common web development tasks. The latest version of Django (as of my last update) is Django 3.x.
+
+2. How is the complete request and response cycle working in Django?
+   In Django, the request-response cycle begins when a client sends a request to the Django server. The server routes the request to the appropriate view function based on the URL configuration. The view processes the request and returns a response, which is then sent back to the client.
+
+3. What is the Architecture is following Django?
+   Django follows the Model-View-Template (MVT) architecture. Models represent the data structure, views handle the logic, and templates manage the presentation layer.
+
+4. What is MVT and MVC, How it’s related to Django?
+   MVT is similar to MVC (Model-View-Controller) but with a different naming convention. In Django, the controller role is handled by views, while the template layer corresponds to the view in MVC.
+
+5. Have you heard about Middlewares? what is it? how it’s Important in Django?
+   Middlewares in Django are components that provide hooks into the request/response processing. They are important for implementing cross-cutting concerns like authentication, logging, etc.
+
+6. What is ORM? How it’s Important?
+   ORM (Object-Relational Mapping) in Django provides an abstraction layer over databases, allowing developers to interact with databases using Python objects. It simplifies database operations and makes the code database-agnostic.
+
+7. What is Advantage for the Django? (explain with features which Django provides)
+   Django provides features like built-in authentication, URL routing, template engine, ORM, and administration interface. It follows the DRY (Don't Repeat Yourself) principle, which helps in writing clean and maintainable code.
+
+8. What is the new version of Django? what all the differences? (don’t forget to say about the latest version support only python 3. x version.
+   The latest version of Django supports only Python 3.x. New versions typically include bug fixes, performance improvements, and new features.
+
+9. What is Backend in Django? Can we write own backend? when?
+   Backend in Django refers to the logic behind web applications. Yes, developers can write custom backends in Django when specific requirements demand it.
+
+10. How to write custom middleware in Django? give one sample( you can use IP filtering for the example)
+    class IPFilterMiddleware:
+        def __init__(self, get_response):
+            self.get_response = get_response
+
+        def __call__(self, request):
+            # Check IP filtering logic here
+            response = self.get_response(request)
+            return response
+
+11. What is Decorator? How to write custom decorator in Django ? Give one sample
+    Decorators in Django are used to modify the behavior of views. Here's a sample custom decorator:
+    
+    from django.http import HttpResponseForbidden
+
+    def custom_decorator(view_func):
+        def wrapper(request, *args, **kwargs):
+            # Custom logic here
+            return view_func(request, *args, **kwargs)
+        return wrapper
+
+    @custom_decorator
+    def my_view(request):
+        return HttpResponse('This is a decorated view')
+    
+12. How is the session Handling In Django?
+    Session handling in Django is managed through a session framework that stores session data on the server and sends a session ID to the client for subsequent requests.
+
+13. What is the Usage of ALLOWED_HOST in Django project settings?
+    ALLOWED_HOSTS setting in Django project settings specifies which hosts can serve the Django application, preventing HTTP Host header attacks.
+
+14. How are the static(CSS, JS, Images)files rendering in Django?
+    Static files like CSS, JS, and images are rendered using the `static` template tag in Django templates. They can be served directly by the Django server in development or via a separate server or CDN in production.
+
+15. What is Template(HTML) Inheritance (inherit base.html to index.html using extends)?
+    Template inheritance in Django allows you to create a base template (base.html) with common elements and extend it in other templates by using the `extends` keyword.
+
+16. What is Template Tags? What is the use? How to write custom tags?
+    Template tags in Django are used to add logic and control structures to templates. Custom template tags can be written to extend Django's template engine.
+
+17. What is Queryset? what is the instance? (all, filter and get)?
+    A queryset in Django represents a collection of objects from the database. `all()` returns all objects, `filter()` filters objects based on conditions, and `get()` returns a single object.
+
+18. Do you know about model Manager in Django? Can we write custom manager? How and why?
+    Model managers in Django are used to encapsulate complex query logic. Yes, developers can write custom managers to define custom querysets or methods.
+
+19. Have you heard about model permissions? why it's using?
+    Model permissions in Django allow developers to specify permissions at the model level, defining who can view, add, change, or delete instances of a model.
+
+20. Consider you have got a project, How will you create models?
+    Models in Django are created by defining Python classes that inherit from `django.db.models.Model`. Fields are defined as class attributes, and methods can be added to define model behavior.
+
+21. What is __init__ method do in models?
+    The `__init__` method in models is called when an instance of the model is created. It can be overridden to initialize instance variables or perform other setup tasks.
+
+22. What is Inheritance in Models ? Give one sample?
+    Inheritance in Django models allows you to create new models by extending existing ones. For example:
+    
+    class ParentModel(models.Model):
+        ...
+
+    class ChildModel(ParentModel):
+        ...
+    
+23. What’s the difference between Django OneToOneField and ForeignKey?
+    OneToOneField establishes a one-to-one relationship between two models, while ForeignKey establishes a many-to-one relationship.
+
+24. What’s the difference between OneToMany and ManyToMany field?
+    Django doesn't have a direct OneToMany field. Instead, it uses ForeignKey to establish a many-to-one relationship. ManyToManyField is used to establish a many-to-many relationship between two models.
+
+25. How to insert a data into the M2M field in the models(field.add.())?
+    Data can be inserted into a ManyToManyField in Django using the `add()` method:
+    
+    instance.m2m_field.add(obj)
+    
+
+26. Difference between User, AbstractUser and AbstractBaseUser models in Django?
+    `User` is the default user model provided by Django. `AbstractUser` allows you to extend the default user model, while `AbstractBaseUser` allows you to create a completely custom user model.
+
+27. What is the difference between Function based and Class-based views?
+    Function-based views are simple functions that take a request and return a response. Class-based views are Python classes that implement HTTP methods as class methods.
+
+28. What is serialization?
+    Serialization in Django refers to the process of converting complex data types (like querysets) into native Python data types (like dictionaries) that can be easily rendered into JSON, XML, etc.
+
+29. What’s the difference between select_related and prefetch_related in Django ORM?
+    `select_related` follows foreign key relationships and performs a single SQL query with a JOIN. `prefetch_related` performs separate SQL queries for each relationship.
+
+30. What all basic request methods? Difference between POST & PUT
+    Basic HTTP request methods in Django include GET, POST, PUT, PATCH, DELETE, OPTIONS, and HEAD. POST is used to create new resources, while PUT is used to update existing resources.
+
+31. Difference between Django’s annotate and aggregate methods?
+    `annotate` adds aggregate values to each object in a queryset, while `aggregate` performs aggregation across the entire queryset and returns a dictionary of results.
+
+32. How to filter multiple fields in a filter?
+    Multiple fields can be filtered in Django using Q objects:
+    
+    from django.db.models import Q
+    queryset = MyModel.objects.filter(Q(field1=value1) & Q(field2=value2))
+    
+33. How the Ajax request is working Django ? is it secured?
+    Ajax requests in Django are similar to regular requests, but they're typically handled by views that return JSON responses. They can be secured using CSRF tokens.
+
+34. What is CSRF? How it’s preventing in Django?
+    CSRF is a security vulnerability where an attacker tricks a user into performing actions on a website without their consent. Django prevents CSRF attacks by including CSRF tokens in forms and validating them on submission.
+
+35. What Are messages in Django? How it’s helping Django application development
+    Messages in Django are a way to communicate with users by displaying messages on the next page they visit. They are helpful for providing feedback after form submissions or other actions.
+
+36. What are signals in Django? what all the methods available?
+    Signals in Django allow certain senders to notify a set of receivers when certain actions occur. They are useful for decoupling applications and triggering actions based on specific events.
